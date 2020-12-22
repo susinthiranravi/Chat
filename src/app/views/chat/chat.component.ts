@@ -107,7 +107,7 @@ export class ChatComponent implements OnInit{
     this.channel.sendMessage(e.message.text);
   }
 
-  // ngOnDestroy(){
-  //   this.client.shutdown();
-  // }
+  ngOnDestroy(){
+    this.client.shutdown();
+  }
 }
