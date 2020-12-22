@@ -1,0 +1,5 @@
+<form>
+    <label class="font-weight-bold">User Name:</label>
+    <input type="text" class="form-control" [(ngModel)]="name" name="name"><br>
+    <button class="btn btn-success" routerLink="/chat/{{name}}" [disabled]="!name">Login</button>
+</form>
