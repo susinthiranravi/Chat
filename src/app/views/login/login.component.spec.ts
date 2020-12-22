@@ -23,20 +23,20 @@ describe('LoginComponent', () => {
     component = fixture.componentInstance;
   });
 
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 
-  it('button to be disabled',()=>{
-    const el = fixture.debugElement.nativeElement;
-    fixture.detectChanges();
-    expect(el.querySelector('button').disabled).toBeTruthy();
-  })
+  // it('button to be disabled',()=>{
+  //   const el = fixture.debugElement.nativeElement;
+  //   fixture.detectChanges();
+  //   expect(el.querySelector('button').disabled).toBeTruthy();
+  // })
 
-  it('button to be enabled',()=>{
-    const el = fixture.debugElement.nativeElement;
-    component.name = 'susi';
-    fixture.detectChanges();
-    expect(el.querySelector('button').disabled).toBeFalsy();
-  })
+  // it('button to be enabled',()=>{
+  //   const el = fixture.debugElement.nativeElement;
+  //   component.name = 'susi';
+  //   fixture.detectChanges();
+  //   expect(el.querySelector('button').disabled).toBeFalsy();
+  // })
 });

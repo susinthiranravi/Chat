@@ -37,16 +37,16 @@ export class ChatComponent implements OnInit{
   initiateTwilioChat() {
 
     var self = this;
-    // this.chatService.getTwilioToken(this.user.name).then(res=>{
-    //   TwilioChat.create(res['token']).then(client => {
-    //     self.client = client;
-    //     self.setupChatClient();
-    //   }).catch(err=>{
-    //     console.log(err);
-    //   })
-    //   }).catch(err=>{
-    //     console.log(err);
-    //   })
+    this.chatService.getTwilioToken(this.user.name).then(res=>{
+      TwilioChat.create(res['token']).then(client => {
+        self.client = client;
+        self.setupChatClient();
+      }).catch(err=>{
+        console.log(err);
+      })
+      }).catch(err=>{
+        console.log(err);
+      })
       
 
   }
